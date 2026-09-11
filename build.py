@@ -506,7 +506,7 @@ def report(data):
     for k in ("publications", "software", "talks", "funding", "honors", "current", "alumni"):
         print(f"  {k:13s} {len(data[k])}")
         for item in data[k]:
-            label = item.get("citation") or item.get("title") or item.get("name")
+            label = (item.get("citation") or item.get("title") or item.get("name")).replace("\u2042", "*")
             print(f"      - {label[:90]}")
 
 
