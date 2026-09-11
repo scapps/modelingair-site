@@ -31,7 +31,7 @@ A `## Web` section in a record note, or `## Web bio` in a person note, replaces 
 
 ## Pre-vault material
 
-`content/legacy-publications.yaml` and `content/legacy-team.yaml` hold the papers and alumni from before the vault existed. When one of them gets a vault note, delete it from the legacy file so it is not listed twice. The legacy publications file currently holds only the three 2012 papers from the old site; the rest of the pre-2022 list can be pasted in from the CV in the same format.
+The vault's record layer starts around 2022, so the earlier body of work comes from the CV (`CV_9_26.docx`) and lives in `content/legacy-*.yaml`: publications 1–33, earlier funding, invited and student presentations, honors, all research mentees, and GEOS-Chem-hyd (which has no vault software note yet). The generator merges these with the vault and skips any legacy entry that matches a vault note (by DOI for publications, by name for people and software, by title for talks, funding, and honors), so giving something a vault note never produces a duplicate and never requires editing a legacy file. The legacy files are the place to fix a typo in an old entry; they are not the place to add new work, which belongs in the vault.
 
 ## Layout
 

@@ -16,9 +16,11 @@ home_affiliation: Drexel
 pi:
   name: Shannon Capps
   title: Associate Professor, Civil, Architectural, and Environmental Engineering, Drexel University
+  photo: assets/capps.jpg
   bio: |
-    Ph.D., Chemical & Biomolecular Engineering, Georgia Institute of Technology (2013).
-    B.E., Chemical Engineering, Vanderbilt University (2007).
+    Shannon Capps joined Drexel in 2016 and was promoted to Associate Professor in 2022. She spent the 2025–26 academic year as a Visiting Associate Professor in Chemical and Biomolecular Engineering at Vanderbilt University. Before Drexel she was a postdoctoral researcher at the University of Colorado Boulder and at the U.S. EPA Office of Research and Development.
+
+    Ph.D., Chemical & Biomolecular Engineering, Georgia Institute of Technology (2013). B.E., Chemical Engineering, Vanderbilt University (2007).
 
 # Navigation: key, href, label
 nav:

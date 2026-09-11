@@ -364,6 +364,22 @@ def page(title, body, active):
                .replace("{{css}}", (TEMPLATES / "style.css").read_text(encoding="utf-8")))
 
 
+def norm(s):
+    return re.sub(r"[^a-z0-9]+", "", str(s or "").lower())
+
+
+def merge_legacy(items, legacy, key):
+    """Append legacy entries whose `key` does not match an existing vault item."""
+    seen = {norm(i.get(key)) for i in items if i.get(key)}
+    out = list(items)
+    for item in legacy:
+        k = norm(item.get(key))
+        if k and k in seen:
+            continue
+        out.append(item)
+    return out
+
+
 def render_home(data):
     body = [f'<section class="hero"><h1>{esc(CONFIG["site_title"])}</h1><p class="lead">{esc(CONFIG["tagline"])}</p></section>']
     body.append(f'<section class="prose">{md(read_content("home.md"))}</section>')
@@ -397,9 +413,9 @@ def render_publications(data):
             body.append(f'<li>{cite_html(p["citation"], p["doi"])} <span class="muted">({esc(p["group"])})</span></li>')
         body.append("</ol>")
     published = [p for p in pubs if p["group"] == "published"]
-    legacy = content_yaml("legacy-publications.yaml")
-    for item in legacy:
-        published.append({"year": int(item["year"]), "citation": item["citation"], "doi": item.get("doi", ""), "group": "published"})
+    legacy = [{"year": int(i["year"]), "citation": i["citation"], "doi": str(i.get("doi", "")), "group": "published"}
+              for i in content_yaml("legacy-publications.yaml")]
+    published = merge_legacy(published, legacy, "doi")
     years = sorted({p["year"] for p in published}, reverse=True)
     for y in years:
         body.append(f"<h2>{y}</h2><ol class=\"pubs\">")
@@ -466,15 +482,13 @@ def person_card(p):
 def render_team(data):
     body = ["<h1>Team</h1>"]
     pi = CONFIG.get("pi", {})
-    body.append('<h2>Principal investigator</h2>' + person_card({
+    photo = f'<img class="photo" src="{esc(pi["photo"])}" alt="{esc(pi.get("name", ""))}">' if pi.get("photo") else ""
+    body.append('<h2>Principal investigator</h2><div class="pi">' + photo + person_card({
         "name": pi.get("name", ""), "role": pi.get("title", ""), "bio": pi.get("bio", ""),
-    }))
+    }) + "</div>")
     if data["current"]:
         body.append('<h2>Current members</h2><div class="grid">' + "".join(person_card(p) for p in data["current"]) + "</div>")
-    alumni = list(data["alumni"])
-    for item in content_yaml("legacy-team.yaml"):
-        alumni.append({"name": item["name"], "role": item.get("role", ""), "degree": item.get("degree", ""),
-                       "years": str(item.get("years", "")), "placement": item.get("placement", ""), "bio": item.get("note", "")})
+    alumni = data["alumni"]
     if alumni:
         body.append('<h2>Alumni</h2><div class="grid">' + "".join(person_card(p) for p in alumni) + "</div>")
     return page("Team", "\n".join(body), "team")
@@ -490,12 +504,34 @@ def render_contact():
 
 def collect(vault: Path):
     current, alumni, by_slug = select_people(vault)
+    software = merge_legacy(select_software(vault), [
+        {"name": i["name"], "status": i.get("status", "released"), "summary": i.get("summary", ""), "repo": i.get("repo", ""),
+         "doi": str(i.get("doi", "")), "license": i.get("license", ""), "release": str(i.get("release", ""))}
+        for i in content_yaml("legacy-software.yaml")], "name")
+    talks = merge_legacy(select_talks(vault), [
+        {"title": i["title"], "venue": i.get("venue", ""), "institution": "", "kind": i.get("kind", ""),
+         "date": str(i.get("date", "")), "year": int(str(i.get("date", "0"))[:4]), "bygroup": bool(i.get("bygroup", False))}
+        for i in content_yaml("legacy-talks.yaml")], "title")
+    talks.sort(key=lambda t: t["date"], reverse=True)
+    funding = merge_legacy(select_funding(vault), [
+        {"title": i["title"], "agency": i.get("agency", ""), "program": i.get("program", ""), "role": i.get("role", ""),
+         "period": str(i.get("period", "")), "starts": str(i.get("period", ""))[:4], "area": "research"}
+        for i in content_yaml("legacy-funding.yaml")], "title")
+    funding.sort(key=lambda f: f["starts"], reverse=True)
+    honors = merge_legacy(select_honors(vault), [
+        {"title": i["title"], "org": i.get("org", ""), "year": str(i.get("year", ""))}
+        for i in content_yaml("legacy-honors.yaml")], "title")
+    honors.sort(key=lambda h: h["year"], reverse=True)
+    legacy_people = [{"name": i["name"], "role": i.get("role", ""), "degree": i.get("degree", ""), "years": str(i.get("years", "")),
+                      "placement": i.get("placement", ""), "bio": i.get("note", ""), "affiliation": ""}
+                     for i in content_yaml("legacy-team.yaml")]
+    alumni = merge_legacy(alumni, legacy_people, "name")
     return {
         "publications": select_publications(vault, by_slug),
-        "software": select_software(vault),
-        "talks": select_talks(vault),
-        "funding": select_funding(vault),
-        "honors": select_honors(vault),
+        "software": software,
+        "talks": talks,
+        "funding": funding,
+        "honors": honors,
         "current": current,
         "alumni": alumni,
     }

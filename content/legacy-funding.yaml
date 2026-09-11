@@ -1,0 +1,8 @@
+# Awards that predate the vault's 30-Record/proposals/ folder, taken from the CV.
+# Fields: title, agency, program, role, period. Amounts are deliberately omitted.
+# A legacy entry whose title matches a vault proposal note is skipped automatically.
+- {title: "Assimilating Ammonia Observations to Improve Emissions Impact Estimates", agency: NASA, program: New Investigator Program, role: PI, period: 2018 – 2021}
+- {title: "Acquiring a Scanning Mobility Particle Sizer (SMPS) for Indoor and Outdoor Air Quality Measurements", agency: Drexel University, program: Instrumentation Grant, role: co-I, period: 2020}
+- {title: "Analysis of Ozone Formation Data from the San Antonio Field Study", agency: Texas Air Quality Research Program, role: co-I, period: 2018 – 2019}
+- {title: "Design and Implementation for Spatially-Distributed Air Monitoring Campaigns in Philadelphia", agency: Drexel Urban Health Collaborative, role: co-I, period: 2017 – 2018}
+- {title: "Bartels Endowed Faculty Engineering Development Fund", agency: Drexel University College of Engineering, role: PI, period: 2017}

@@ -1,10 +1,9 @@
-**Shannon Capps**
+**Shannon Capps, Ph.D.**
 Associate Professor
 Department of Civil, Architectural, and Environmental Engineering
 Drexel University
+3141 Chestnut Street, Philadelphia, PA 19104
 
-Email: shannon {dot} capps {at} drexel {dot} edu
+Email: shannon.capps@drexel.edu
 
-Office: 209, 3101 Market Street, Philadelphia, PA 19104
-
-Prospective students interested in atmospheric modeling, sensitivity analysis, or air quality and health are welcome to write with a short description of their background and interests.
+Prospective students interested in atmospheric modeling, sensitivity analysis, satellite data assimilation, or air quality and health are welcome to write with a short description of their background and interests.

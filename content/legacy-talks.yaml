@@ -1,0 +1,15 @@
+# Presentations that predate the vault's 30-Record/talks/ folder, taken from the CV.
+# Fields: title, venue, kind, date (YYYY-MM), bygroup (true when a student presented).
+# A legacy entry whose title matches a vault talk note is skipped automatically.
+- {title: "Leveraging Augmented Chemical Transport Models and Satellite-based Observations to Address Short-lived Air Pollutant Impacts", venue: "Harvard Atmospheric & Environmental Chemistry Seminar", kind: invited seminar, date: 2022-04}
+- {title: "Analysis of Ozone Formation Data from the San Antonio Field Study", venue: "Texas Air Quality Research Program report-out, Austin, Texas", kind: invited, date: 2019-08}
+- {title: "Elucidating influences of ozone precursor emissions on human health, vegetation, and metropolitan areas", venue: "Mid-Atlantic Regional Meeting of the American Chemical Society, Baltimore, Maryland", kind: invited, date: 2019-05}
+- {title: "Sensitivity analysis using the CMAQ adjoint to study the control and impacts of ground-level ozone", venue: "EPA Region 3 Air Quality Planning Section, Philadelphia", kind: invited, date: 2018-07, bygroup: true}
+- {title: "Elucidating Emissions Influences on Aspects of Air Quality", venue: "Chemical Engineering Seminar, Nazarbayev University, Astana, Kazakhstan", kind: invited seminar, date: 2018-03}
+- {title: "Developing a Modeling Framework for Decision-making", venue: "Air Pollution, Climate and Health in Southern Asia and the HKH workshop, ICIMOD, Kathmandu, Nepal", kind: invited, date: 2017-11}
+- {title: "Efficiently Elucidating Emissions Influences on Aspects of Air Quality and Climate", venue: "Vanderbilt University Civil Engineering Senior Seminar", kind: invited seminar, date: 2017-01}
+- {title: "Translating outdoor modeling advancements indoors", venue: "Sloan Indoor Air Modeling Workshop, Washington, D.C.", kind: invited, date: 2016-11}
+- {title: "Jiachen Liu — Application of the Hyperdual-step Method in CMAQ for the Assessment of Aerosol Formation from Volatile Chemical Products", venue: American Geophysical Union Fall Meeting 2024, kind: conference contributed, date: 2024-12, bygroup: true}
+- {title: "Samuel Akinjole and Jiachen Liu — GEOS-Chem-hyd: Enabling calculation of numerically exact, second-order sensitivities", venue: 11th International GEOS-Chem Meeting, kind: conference contributed, date: 2024-06, bygroup: true}
+- {title: "Assessing the Value of Each Instrumented CMAQ Model for Addressing Aerosol-related Policy Questions", venue: American Association for Aerosol Research Annual Conference 2024, kind: conference contributed, date: 2024-10}
+- {title: "Distinctions between impacts of COVID-19 behavioral changes on nitrogen dioxide in urban and exurban areas in the United States", venue: Association of Environmental Engineering and Science Professors 2022, kind: conference contributed, date: 2022-06, bygroup: true}

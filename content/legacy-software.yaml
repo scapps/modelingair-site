@@ -1,0 +1,7 @@
+# Software without a vault note yet, taken from the CV. Once a note exists in
+# 30-Record/software/, an entry with the same name is skipped automatically.
+- name: GEOS-Chem-hyd
+  summary: "Hyperdual-step, source-oriented sensitivity analysis in GEOS-Chem, including a hyperdual treatment of the HEMCO emissions component. Released publicly as GEOS-Chem-hyd v0 in October 2025 and described in Akinjole and Capps (2025)."
+  doi: 10.5281/zenodo.16575028
+  release: 2025-10-30
+  status: released

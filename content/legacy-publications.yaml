@@ -1,15 +1,103 @@
-# Publications that predate the vault's 30-Record/publications/ folder.
-# Each entry: year, citation (plain text), doi (optional).
-# When a paper gets a vault record note, delete it here so it is not listed twice.
-# Entries below were carried over from the old modelingair.com; the remaining
-# pre-2022 papers can be pasted here from the CV in the same format.
-
+# Publications that predate the vault's 30-Record/publications/ folder, taken from
+# the CV (CV_9_26.docx, entries 1-33). Each entry: year, citation, doi.
+# A legacy entry whose DOI matches a vault record is skipped automatically, so a
+# paper can be given a vault note without editing this file.
+- year: 2022
+  citation: 'Cao, H., Henze, D. K., Zhu, L., Shephard, M. W., Cady-Pereira, K., Dammers, E., et al. 4D-Var inversion of European NH3 emissions using CrIS NH3 measurements and GEOS-Chem adjoint with bi-directional and uni-directional flux schemes. Journal of Geophysical Research: Atmospheres, 127, e2021JD035687.'
+  doi: 10.1029/2021JD035687
+- year: 2021
+  citation: Lyu, C., Capps, S. L., Kurashima, K., Henze, D. K., Pierce, G., Hakami, A., Zhao, S., Resler, J., Carmichael, G. R., Sandu, A., Russell, A. G., Chai, T. & Milford, J. Evaluating oil and gas contributions to ambient nonmethane hydrocarbon mixing ratios and ozone-related metrics in the Colorado Front Range. Atmospheric Environment 246, 118113.
+  doi: 10.1016/j.atmosenv.2020.118113
+- year: 2021
+  citation: Chen, Y., Shen, H., Kaiser, J., Hu, Y., Capps, S. L., Zhao, S., Hakami, A., Shih, J.-S., Pavur, G. K., Turner, M. D., Henze, D. K., Resler, J., Nenes, A., Napelenok, S. L., Bash, J. O., Fahey, K. M., Carmichael, G. R., Chai, T., Clarisse, L., Coheur, P.-F., Van Damme, M. & Russell, A. G. High-resolution hybrid inversion of IASI ammonia columns to constrain US ammonia emissions using the CMAQ adjoint model. Atmospheric Chemistry and Physics 21, 2067-2082.
+  doi: 10.5194/acp-21-2067-2021
+- year: 2020
+  citation: Zhao, S., Russell, M. G., Hakami, A., Capps, S. L., Turner, M. D., Henze, D. K., Percell, P. B., Resler, J., Shen, H., Russell, A. G., Nenes, A., Pappin, A. J., Napelenok, S. L., Bash, J. O., Fahey, K. M., Carmichael, G. R., Stanier, C. O. & Chai, T. A multiphase CMAQ version 5.0 adjoint. Geoscientific Model Development 13, 2925-2944.
+  doi: 10.5194/gmd-13-2925-2020
+- year: 2019
+  citation: Nsanzineza, R., Capps, S. L. & Milford, J. B. Modeling Emissions and Ozone Air Quality Impacts of Future Scenarios for Energy and Power Production in the Rocky Mountain States. Environ. Sci. Technol. 53, 7893-7902.
+  doi: 10.1021/acs.est.9b00356
+- year: 2019
+  citation: Lyu, C., Capps, S. L., Hakami, A., Zhao, S., Resler, J., Carmichael, G. R., Sandu, A., Russell, A. G., Chai, T. & Henze, D. K. Elucidating emissions control strategies for ozone to protect human health and public welfare within the continental United States. Environmental Research Letters 14, 124093.
+  doi: 10.1088/1748-9326/ab5e05
+- year: 2018
+  citation: Pye, H. O. T., Zuend, A., Fry, J. L., Isaacman-VanWertz, G., Capps, S. L., Appel, K. W., Foroutan, H., Xu, L., Ng, N. L. & Goldstein, A. H. Coupling of organic and inorganic aerosol systems and the effect on gas-particle partitioning in the southeastern US. Atmospheric Chemistry and Physics 18, 357-370.
+  doi: 10.5194/acp-18-357-2018
+- year: 2017
+  citation: 'Qu, Z., Henze, D. K., Capps, S. L., Wang, Y., Xu, X. G., Wang, J. & Keller, M. Monthly top-down NOx emissions for China (2005-2012): A hybrid inversion method and trend analysis. J. Geophys. Res.-Atmos. 122, 4600-4625.'
+  doi: 10.1002/2016jd025852
+- year: 2017
+  citation: Lonsdale, C. R., Hegarty, J. D., Cady-Pereira, K. E., Alvarado, M. J., Henze, D. K., Turner, M. D., Capps, S. L., Nowak, J. B., Neuman, A., Middlebrook, A. M., Bahreini, R., Murphy, J. G., Markovic, M. Z., VandenBoer, T. C., Russell, L. M. & Scarino, A. J. Modeling the diurnal variability of agricultural ammonia in Bakersfield, California, during the CalNex campaign. Atmospheric Chemistry and Physics 17, 2721-2739.
+  doi: 10.5194/acp-17-2721-2017
+- year: 2017
+  citation: Evanoski-Cole, A. R., Gebhart, K. A., Sive, B. C., Zhou, Y., Capps, S. L., Day, D. E., Prenni, A. J., Schurman, M. I., Sullivan, A. P., Li, Y., Hand, J. L., Schichtel, B. A. & Collett, J. L. Composition and sources of winter haze in the Bakken oil and gas extraction region. Atmospheric Environment 156, 77-87.
+  doi: 10.1016/j.atmosenv.2017.02.019
+- year: 2017
+  citation: Dammers, E., Shephard, M. W., Palm, M., Cady-Pereira, K., Capps, S., Lutsch, E., Strong, K., Hannigan, J. W., Ortega, I., Toon, G. C., Stremme, W., Grutter, M., Jones, N., Smale, D., Siemons, J., Hrpcek, K., Tremblay, D., Schaap, M., Notholt, J. & Erisman, J. W. Validation of the CrIS fast physical NH3 retrieval with ground-based FTIR. Atmos. Meas. Tech. 10, 2645-2667.
+  doi: 10.5194/amt-10-2645-2017
+- year: 2016
+  citation: Turner, M. D., Henze, D. K., Capps, S. L., Hakami, A., Zhao, S. L., Resler, J., Carmichael, G. R., Stanier, C. O., Baek, J., Sandu, A., Russell, A. G., Nenes, A., Pinder, R. W., Napelenok, S. L., Bash, J. O., Percell, P. B. & Chai, T. F. Reply to Comment on 'Premature deaths attributed to source-specific BC emissions in six urban US regions'. Environmental Research Letters 11.
+  doi: 10.1088/1748-9326/11/9/098002
+- year: 2016
+  citation: Pusede, S. E., Duffey, K. C., Shusterman, A. A., Saleh, A., Laughner, J. L., Wooldridge, P. J., Zhang, Q., Parworth, C. L., Kim, H., Capps, S. L., Valin, L. C., Cappa, C. D., Fried, A., Walega, J., Nowak, J. B., Weinheimer, A. J., Hoff, R. M., Berkoff, T. A., Beyersdorf, A. J., Olson, J., Crawford, J. H. & Cohen, R. C. On the effectiveness of nitrogen oxide reductions as a control over ammonium nitrate aerosol. Atmospheric Chemistry and Physics 16, 2575-2596.
+  doi: 10.5194/acp-16-2575-2016
+- year: 2016
+  citation: Capps, S. L., Driscoll, C. T., Fakhraei, H., Templer, P. H., Craig, K. J., Milford, J. B. & Lambert, K. F. Estimating potential productivity cobenefits for crops and trees from reduced ozone with US coal power plant carbon standards. J. Geophys. Res.-Atmos. 121, 14679-14690.
+  doi: 10.1002/2016jd025141
+- year: 2015
+  citation: 'Zhu, L., Henze, D. K., Bash, J. O., Cady-Pereira, K. E., Shephard, M. W., Luo, M. & Capps, S. L. Sources and Impacts of Atmospheric NH3: Current Understanding and Frontiers for Modeling, Measurements, and Remote Sensing in North America. Current Pollution Reports 1, 95-116.'
+  doi: 10.1007/s40726-015-0010-4
+- year: 2015
+  citation: Zhu, L., Henze, D., Bash, J., Jeong, G.-R., Cady-Pereira, K., Shephard, M., Luo, M., Paulot, F. & Capps, S. Global evaluation of ammonia bidirectional exchange and livestock diurnal variation schemes. Atmospheric Chemistry and Physics 15, 12823-12843.
+  doi: 10.5194/acp-15-12823-2015
+- year: 2015
+  citation: Zhang, L., Liu, L. C., Zhao, Y. H., Gong, S. L., Zhang, X. Y., Henze, D. K., Capps, S. L., Fu, T. M., Zhang, Q. & Wang, Y. X. Source attribution of particulate matter pollution over North China with the adjoint method. Environmental Research Letters 10.
+  doi: 10.1088/1748-9326/10/8/084011
+- year: 2015
+  citation: Turner, M. D., Henze, D. K., Hakami, A., Zhao, S. L., Resler, J., Carmichael, G. R., Stanier, C. O., Baek, J., Sandu, A., Russell, A. G., Nenes, A., Jeong, G. R., Capps, S. L., Percell, P. B., Pinder, R. W., Napelenok, S. L., Bash, J. O. & Chai, T. F. Differences Between Magnitudes and Health Impacts of BC Emissions Across the United States Using 12 km Scale Seasonal Source Apportionment. Environ. Sci. Technol. 49, 4362-4371.
+  doi: 10.1021/es505968b
+- year: 2015
+  citation: Turner, M. D., Henze, D. K., Capps, S. L., Hakami, A., Zhao, S. L., Resler, J., Carmichael, G. R., Stanier, C. O., Baek, J., Sandu, A., Russell, A. G., Nenes, A., Pinder, R. W., Napelenok, S. L., Bash, J. O., Percell, P. B. & Chai, T. F. Premature deaths attributed to source-specific BC emissions in six urban US regions. Environmental Research Letters 10.
+  doi: 10.1088/1748-9326/10/11/114014
+- year: 2015
+  citation: Sheyko, B. A., Sullivan, S. C., Morales, R., Capps, S. L., Barahona, D., Shi, X., Liu, X. & Nenes, A. Quantifying sensitivities of ice crystal number and sources of ice crystal number variability in CAM 5.1 using the adjoint of a physically based cirrus formation parameterization. J. Geophys. Res.-Atmos. 120, 2834-2854.
+  doi: 10.1002/2014jd022457
+- year: 2015
+  citation: 'Shephard, M. W., McLinden, C. A., Cady-Pereira, K. E., Luo, M., Moussa, S. G., Leithead, A., Liggio, J., Staebler, R. M., Akingunola, A., Makar, P., Lehr, P., Zhang, J., Henze, D. K., Millet, D. B., Bash, J. O., Zhu, L., Wells, K. C., Capps, S. L., Chaliyakunnel, S., Gordon, M., Hayden, K., Brook, J. R., Wolde, M. & Li, S. M. Tropospheric Emission Spectrometer (TES) satellite observations of ammonia, methanol, formic acid, and carbon monoxide over the Canadian oil sands: validation and model evaluation. Atmos. Meas. Tech. 8, 5189-5211.'
+  doi: 10.5194/amt-8-5189-2015
+- year: 2015
+  citation: Nguyen, T. K. V., Capps, S. L. & Carlton, A. G. Decreasing Aerosol Water Is Consistent with OC Trends in the Southeast US. Environ. Sci. Technol. 49, 7843-7850.
+  doi: 10.1021/acs.est.5b00828
+- year: 2015
+  citation: 'Luo, M., Shephard, M. W., Cady-Pereira, K. E., Henze, D. K., Zhu, L. Y., Bash, J. O., Pinder, R. W., Capps, S. L., Walker, J. T. & Jones, M. R. Satellite observations of tropospheric ammonia and carbon monoxide: Global distributions, regional correlations and comparisons to model simulations. Atmospheric Environment 106, 262-277.'
+  doi: 10.1016/j.atmosenv.2015.02.007
+- year: 2015
+  citation: Guo, H., Xu, L., Bougiatioti, A., Cerully, K. M., Capps, S. L., Hite, J. R., Carlton, A. G., Lee, S. H., Bergin, M. H., Ng, N. L., Nenes, A. & Weber, R. J. Fine-particle water and pH in the southeastern United States. Atmospheric Chemistry and Physics 15, 5211-5228.
+  doi: 10.5194/acp-15-5211-2015
+- year: 2013
+  citation: Pye, H. O. T., Pinder, R. W., Piletic, I. R., Xie, Y., Capps, S. L., Lin, Y. H., Surratt, J. D., Zhang, Z. F., Gold, A., Luecken, D. J., Hutzell, W. T., Jaoui, M., Offenberg, J. H., Kleindienst, T. E., Lewandowski, M. & Edney, E. O. Epoxide Pathways Improve Model Predictions of Isoprene Markers and Reveal Key Role of Acidity in Aerosol Formation. Environ. Sci. Technol. 47, 11056-11064.
+  doi: 10.1021/es402106h
+- year: 2013
+  citation: 'Moore, R. H., Karydis, V. A., Capps, S. L., Lathem, T. L. & Nenes, A. Droplet number uncertainties associated with CCN: an assessment using observations and a global model adjoint. Atmospheric Chemistry and Physics 13, 4235-4251.'
+  doi: 10.5194/acp-13-4235-2013
 - year: 2012
-  citation: "Karydis, V. A., Capps, S. L., Russell, A. G., and Nenes, A. Adjoint sensitivity of global cloud droplet number to aerosol and dynamical parameters. Atmospheric Chemistry and Physics, 12, 9041-9055."
+  citation: 'Zhang, W., Capps, S. L., Hu, Y., Nenes, A., Napelenok, S. L. & Russell, A. G. Development of the high-order decoupled direct method in three dimensions for particulate matter: enabling advanced sensitivity analysis in air quality models. Geoscientific Model Development 5, 355-368.'
+  doi: 10.5194/gmd-5-355-2012
+- year: 2012
+  citation: Karydis, V. A., Capps, S. L., Russell, A. G. & Nenes, A. Adjoint sensitivity of global cloud droplet number to aerosol and dynamical parameters. Atmospheric Chemistry and Physics 12, 9041-9055.
   doi: 10.5194/acp-12-9041-2012
 - year: 2012
-  citation: "Karydis, V. A., Capps, S. L., Moore, R. H., Russell, A. G., Henze, D. K., and Nenes, A. Using a global aerosol model adjoint to unravel the footprint of spatially-distributed emissions on cloud droplet number and cloud albedo. Geophysical Research Letters, 39, L24804."
-  doi: 10.1029/2012GL053346
+  citation: Karydis, V. A., Capps, S. L., Moore, R. H., Russell, A. G., Henze, D. K. & Nenes, A. Using a global aerosol model adjoint to unravel the footprint of spatially-distributed emissions on cloud droplet number and cloud albedo. Geophysical Research Letters 39.
+  doi: 10.1029/2012gl053346
 - year: 2012
-  citation: "Capps, S. L., Henze, D. K., Hakami, A., Russell, A. G., and Nenes, A. ANISORROPIA: the adjoint of the aerosol thermodynamic model ISORROPIA. Atmospheric Chemistry and Physics, 12, 527-543."
+  citation: 'Capps, S. L., Henze, D. K., Hakami, A., Russell, A. G. & Nenes, A. ANISORROPIA: the adjoint of the aerosol thermodynamic model ISORROPIA. Atmospheric Chemistry and Physics 12, 527-543.'
   doi: 10.5194/acp-12-527-2012
+- year: 2010
+  citation: Capps, S. L., Hu, Y. T. & Russell, A. G. Assessing Near-Field and Downwind Impacts of Reactivity-Based Substitutions. Journal of the Air & Waste Management Association 60, 316-327.
+  doi: 10.3155/1047-3289.60.3.316
+- year: 2009
+  citation: Redmill, P. S., Capps, S. L., Cummings, P. T. & McCabe, C. A molecular dynamics study of the Gibbs free energy of solvation of fullerene particles in octanol and water. Carbon 47, 2865-2874.
+  doi: 10.1016/j.carbon.2009.06.040
+- year: 2008
+  citation: Murphy, D. M., Capps, S. L., Daniel, J. S., Frost, G. J. & White, W. H. Weekly patterns of aerosol in the United States. Atmospheric Chemistry and Physics 8, 2729-2739.
+  doi: 10.5194/acp-8-2729-2008
