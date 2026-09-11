@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Publications · Atmospheric Modeling @ Drexel</title>
+<meta name="description" content="Mathematical representations of Earth&#x27;s atmosphere, built to inform environmental decisions.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #fbfbf9;
+  --fg: #1f2933;
+  --muted: #5f6b76;
+  --line: #e3e6e2;
+  --accent: #1f6f8b;        /* deep sky */
+  --accent-soft: #e6f1f5;
+  --card: #ffffff;
+  --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --sans: "Inter", system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #131a20; --fg: #e6e9ec; --muted: #9aa5b1; --line: #26313b;
+    --accent: #7cc4de; --accent-soft: #1b2a33; --card: #182129;
+  }
+}
+* { box-sizing: border-box; }
+html { color-scheme: light dark; }
+body {
+  margin: 0; background: var(--bg); color: var(--fg);
+  font-family: var(--sans); font-size: 17px; line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+.wrap { max-width: 880px; margin: 0 auto; padding-inline: 20px; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.site-header { border-bottom: 1px solid var(--line); background: var(--bg); }
+.site-header .wrap { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 24px; padding-block: 18px; }
+.brand { font-family: var(--serif); font-size: 1.25rem; font-weight: 600; color: var(--fg); letter-spacing: 0.01em; }
+.site-nav { display: flex; flex-wrap: wrap; gap: 4px 20px; font-size: 0.95rem; font-weight: 500; }
+.site-nav a { color: var(--muted); padding-block: 4px; border-bottom: 2px solid transparent; }
+.site-nav a.active, .site-nav a:hover { color: var(--fg); border-color: var(--accent); text-decoration: none; }
+
+main { padding-block: 40px 64px; }
+h1, h2, h3 { font-family: var(--serif); line-height: 1.2; font-weight: 600; margin: 0 0 0.5em; }
+h1 { font-size: 2.2rem; margin-bottom: 0.6em; }
+h2 { font-size: 1.45rem; margin-top: 2.2em; padding-top: 0.6em; border-top: 1px solid var(--line); }
+h3 { font-size: 1.1rem; margin-top: 1.4em; }
+.hero h1 { font-size: 2.6rem; margin-bottom: 0.2em; }
+.lead { font-size: 1.25rem; color: var(--muted); font-family: var(--serif); margin: 0 0 1.5em; max-width: 40em; }
+.prose p { margin: 0 0 1em; max-width: 44em; }
+.prose h2:first-child { margin-top: 0.8em; }
+.muted { color: var(--muted); }
+.meta { color: var(--muted); font-size: 0.92rem; }
+.tag {
+  display: inline-block; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase;
+  color: var(--accent); background: var(--accent-soft); padding: 2px 8px; border-radius: 999px; margin-right: 6px; vertical-align: middle;
+}
+
+ol.pubs, ul.list, ul.news { padding-left: 0; margin: 0 0 1.5em; list-style: none; }
+ol.pubs li, ul.list li, ul.news li { padding: 10px 0; border-bottom: 1px solid var(--line); }
+ol.pubs li:last-child, ul.list li:last-child, ul.news li:last-child { border-bottom: 0; }
+ol.pubs li a, ul.list li a { white-space: nowrap; }
+
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 18px 20px; margin: 14px 0; }
+.card h3 { margin-top: 0; }
+.card .prose p { margin-bottom: 0.5em; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 14px; }
+.grid .card { margin: 0; }
+.person .role { margin: 0 0 4px; font-weight: 500; }
+.person .muted { margin: 0 0 4px; font-size: 0.95rem; }
+
+.site-footer { border-top: 1px solid var(--line); font-size: 0.88rem; color: var(--muted); }
+.site-footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; padding-block: 20px; }
+
+@media (max-width: 600px) {
+  body { font-size: 16px; }
+  h1 { font-size: 1.8rem; }
+  .hero h1 { font-size: 2rem; }
+  .lead { font-size: 1.1rem; }
+}
+
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">Atmospheric Modeling @ Drexel</a>
+    <nav class="site-nav"><a href="index.html">Interests</a><a href="research.html">Research</a><a href="publications.html" class=active>Publications</a><a href="team.html">Team</a><a href="contact.html">Contact</a></nav>
+  </div>
+</header>
+<main class="wrap">
+<h1>Publications</h1>
+<p class="muted"><a href="https://scholar.google.com/citations?user=REPLACE_ME">Google Scholar profile</a>. An asterisk marks a student or researcher in the group.</p>
+<h2>Submitted or in press</h2><ol class="pubs">
+<li>Akinjole, S. O.* &amp; Capps, S. L. GEOS-Chem-hyd: enabling source-oriented sensitivity analysis with GEOS-Chem. Preprint, EGUsphere, 2025-10-30. (Supplement: 10.5194/egusphere-2025-4543-supplement.) <a href="https://doi.org/10.5194/egusphere-2025-4543">doi:10.5194/egusphere-2025-4543</a> <span class="muted">(submitted)</span></li>
+</ol>
+<h2>2026</h2><ol class="pubs">
+<li>Berman, B. C.*, Cummings, B. E., Tian, X., DeCarlo, P. F., Capps, S. L. &amp; Waring, M. S. The development and evaluation of an air handling unit (AHU) module that simulates temperature and humidity dependent organic and inorganic gas-particle repartitioning. <em>Environmental Science: Processes &amp; Impacts</em> (2026). <a href="https://doi.org/10.1039/D6EM00267F">doi:10.1039/D6EM00267F</a></li>
+<li>Liu, J.* &amp; Capps, S. L. Nonlinear Contributions of NOx and Volatile Chemical Products to Air Pollution and the Associated Acute Premature Mortality. <em>ACS ES&amp;T Air</em> (2026-06-12). <a href="https://doi.org/10.1021/acsestair.5c00415">doi:10.1021/acsestair.5c00415</a></li>
+</ol>
+<h2>2025</h2><ol class="pubs">
+<li>Kim, Kyoung-Min, Kim, Si-Wan, Seo, Seunghwan, Lyu, Congmeng, McDonald, Brian C., Shephard, Mark W., Jimenez, Jose L., Kim, Hwajin, Lim, Cheolsoo, Shin, Hye Jung, Yu, JeongAh, Dibb, Jack, Huey, Gregory, Wennberg, Paul O., Capps, Shannon, Woo, Jung-hun, Jo, Duseong S. &amp; Kim, Jhoon. Impact of CrIS-Derived NH3 Emission Updates on Simulated Nitrate and Ammonium Aerosols over East Asia. <em>Environmental Science &amp; Technology</em>, 2025-12-24. <a href="https://doi.org/10.1021/acs.est.5c08113">doi:10.1021/acs.est.5c08113</a></li>
+</ol>
+<h2>2024</h2><ol class="pubs">
+<li>Berman, B.*, Cummings, B., Guo, H., Campuzano-Jost, P., Jimenez, J., Pagonis, D., Day, D., Finewax, Z., Handschy, A., Nault, B. A., DeCarlo, P., Capps, S. L. &amp; Waring, M. S. Modeling Indoor Inorganic Aerosol Concentrations During the ATHLETIC Campaign with IMAGES. <em>ACS ES&amp;T Air</em>, 1:1084-95 (2024).</li>
+<li>Liu, J.*, Chen, E., &amp; Capps, S. L. The first application of a numerically-exact, higher-order sensitivity analysis approach for atmospheric modelling: implementation of the hyperdual-step method in the Community Multiscale Air Quality Model (CMAQ) version 5.3.2. <em>Geoscientific Model Development</em>, 17(2), 567-585. (2024). <a href="https://doi.org/10.5194/gmd-17-567-2024">doi:10.5194/gmd-17-567-2024</a></li>
+</ol>
+<h2>2023</h2><ol class="pubs">
+<li>Berman, B.*, Capps, S. L., Sauvageau, I., Gao, E., Eastham, S. D. &amp; Russell, R. P. ISORROPIA-MCX: Enabling sensitivity analysis with multicomplex variables in the aerosol thermodynamic model, ISORROPIA. <em>Earth and Space Science</em>, 10, e2022EA002729. (2023-06). <a href="https://doi.org/10.1029/2022EA002729">doi:10.1029/2022EA002729</a></li>
+</ol>
+<h2>2022</h2><ol class="pubs">
+<li>Berman, B. C.*, Cummings, B. E., Avery, A. M., DeCarlo, P. F., Capps, S. L., Waring, M. S. Simulating indoor inorganic aerosols of outdoor origin with the inorganic aerosol thermodynamic equilibrium model ISORROPIA. <em>Indoor Air</em>, 32:e13075. (2022). <a href="https://doi.org/10.1111/ina.13075">doi:10.1111/ina.13075</a></li>
+</ol>
+<h2>2012</h2><ol class="pubs">
+<li>Karydis, V. A., Capps, S. L., Russell, A. G., and Nenes, A. Adjoint sensitivity of global cloud droplet number to aerosol and dynamical parameters. Atmospheric Chemistry and Physics, 12, 9041-9055. <a href="https://doi.org/10.5194/acp-12-9041-2012">doi:10.5194/acp-12-9041-2012</a></li>
+<li>Karydis, V. A., Capps, S. L., Moore, R. H., Russell, A. G., Henze, D. K., and Nenes, A. Using a global aerosol model adjoint to unravel the footprint of spatially-distributed emissions on cloud droplet number and cloud albedo. Geophysical Research Letters, 39, L24804. <a href="https://doi.org/10.1029/2012GL053346">doi:10.1029/2012GL053346</a></li>
+<li>Capps, S. L., Henze, D. K., Hakami, A., Russell, A. G., and Nenes, A. ANISORROPIA: the adjoint of the aerosol thermodynamic model ISORROPIA. Atmospheric Chemistry and Physics, 12, 527-543. <a href="https://doi.org/10.5194/acp-12-527-2012">doi:10.5194/acp-12-527-2012</a></li>
+</ol>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© 2026 Atmospheric Modeling Group, Drexel University</span>
+    <span class="muted">Updated 2026-09-11</span>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,15 @@
+# Publications that predate the vault's 30-Record/publications/ folder.
+# Each entry: year, citation (plain text), doi (optional).
+# When a paper gets a vault record note, delete it here so it is not listed twice.
+# Entries below were carried over from the old modelingair.com; the remaining
+# pre-2022 papers can be pasted here from the CV in the same format.
+
+- year: 2012
+  citation: "Karydis, V. A., Capps, S. L., Russell, A. G., and Nenes, A. Adjoint sensitivity of global cloud droplet number to aerosol and dynamical parameters. Atmospheric Chemistry and Physics, 12, 9041-9055."
+  doi: 10.5194/acp-12-9041-2012
+- year: 2012
+  citation: "Karydis, V. A., Capps, S. L., Moore, R. H., Russell, A. G., Henze, D. K., and Nenes, A. Using a global aerosol model adjoint to unravel the footprint of spatially-distributed emissions on cloud droplet number and cloud albedo. Geophysical Research Letters, 39, L24804."
+  doi: 10.1029/2012GL053346
+- year: 2012
+  citation: "Capps, S. L., Henze, D. K., Hakami, A., Russell, A. G., and Nenes, A. ANISORROPIA: the adjoint of the aerosol thermodynamic model ISORROPIA. Atmospheric Chemistry and Physics, 12, 527-543."
+  doi: 10.5194/acp-12-527-2012

@@ -1,0 +1,29 @@
+# Site configuration. Edit freely; build.py reads this on every run.
+
+site_title: Atmospheric Modeling @ Drexel
+tagline: Mathematical representations of Earth's atmosphere, built to inform environmental decisions.
+domain: modelingair.com            # written to docs/CNAME for GitHub Pages
+scholar_url: https://scholar.google.com/citations?user=REPLACE_ME   # paste the profile URL from the old site
+show_roles: true                   # show PI / co-I on the Funding list
+
+# Where the Obsidian academic vault lives on this computer.
+vault_path: ~/Library/CloudStorage/OneDrive-DrexelUniversity/academicVault
+
+# Person notes are published only when their affiliation contains this string
+# (or the note says `web: true`). Keeps course students from other institutions off the site.
+home_affiliation: Drexel
+
+pi:
+  name: Shannon Capps
+  title: Associate Professor, Civil, Architectural, and Environmental Engineering, Drexel University
+  bio: |
+    Ph.D., Chemical & Biomolecular Engineering, Georgia Institute of Technology (2013).
+    B.E., Chemical Engineering, Vanderbilt University (2007).
+
+# Navigation: key, href, label
+nav:
+  - [home, index.html, Interests]
+  - [research, research.html, Research]
+  - [publications, publications.html, Publications]
+  - [team, team.html, Team]
+  - [contact, contact.html, Contact]

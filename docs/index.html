@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Interests · Atmospheric Modeling @ Drexel</title>
+<meta name="description" content="Mathematical representations of Earth&#x27;s atmosphere, built to inform environmental decisions.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #fbfbf9;
+  --fg: #1f2933;
+  --muted: #5f6b76;
+  --line: #e3e6e2;
+  --accent: #1f6f8b;        /* deep sky */
+  --accent-soft: #e6f1f5;
+  --card: #ffffff;
+  --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --sans: "Inter", system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #131a20; --fg: #e6e9ec; --muted: #9aa5b1; --line: #26313b;
+    --accent: #7cc4de; --accent-soft: #1b2a33; --card: #182129;
+  }
+}
+* { box-sizing: border-box; }
+html { color-scheme: light dark; }
+body {
+  margin: 0; background: var(--bg); color: var(--fg);
+  font-family: var(--sans); font-size: 17px; line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+.wrap { max-width: 880px; margin: 0 auto; padding-inline: 20px; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.site-header { border-bottom: 1px solid var(--line); background: var(--bg); }
+.site-header .wrap { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 24px; padding-block: 18px; }
+.brand { font-family: var(--serif); font-size: 1.25rem; font-weight: 600; color: var(--fg); letter-spacing: 0.01em; }
+.site-nav { display: flex; flex-wrap: wrap; gap: 4px 20px; font-size: 0.95rem; font-weight: 500; }
+.site-nav a { color: var(--muted); padding-block: 4px; border-bottom: 2px solid transparent; }
+.site-nav a.active, .site-nav a:hover { color: var(--fg); border-color: var(--accent); text-decoration: none; }
+
+main { padding-block: 40px 64px; }
+h1, h2, h3 { font-family: var(--serif); line-height: 1.2; font-weight: 600; margin: 0 0 0.5em; }
+h1 { font-size: 2.2rem; margin-bottom: 0.6em; }
+h2 { font-size: 1.45rem; margin-top: 2.2em; padding-top: 0.6em; border-top: 1px solid var(--line); }
+h3 { font-size: 1.1rem; margin-top: 1.4em; }
+.hero h1 { font-size: 2.6rem; margin-bottom: 0.2em; }
+.lead { font-size: 1.25rem; color: var(--muted); font-family: var(--serif); margin: 0 0 1.5em; max-width: 40em; }
+.prose p { margin: 0 0 1em; max-width: 44em; }
+.prose h2:first-child { margin-top: 0.8em; }
+.muted { color: var(--muted); }
+.meta { color: var(--muted); font-size: 0.92rem; }
+.tag {
+  display: inline-block; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase;
+  color: var(--accent); background: var(--accent-soft); padding: 2px 8px; border-radius: 999px; margin-right: 6px; vertical-align: middle;
+}
+
+ol.pubs, ul.list, ul.news { padding-left: 0; margin: 0 0 1.5em; list-style: none; }
+ol.pubs li, ul.list li, ul.news li { padding: 10px 0; border-bottom: 1px solid var(--line); }
+ol.pubs li:last-child, ul.list li:last-child, ul.news li:last-child { border-bottom: 0; }
+ol.pubs li a, ul.list li a { white-space: nowrap; }
+
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 18px 20px; margin: 14px 0; }
+.card h3 { margin-top: 0; }
+.card .prose p { margin-bottom: 0.5em; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 14px; }
+.grid .card { margin: 0; }
+.person .role { margin: 0 0 4px; font-weight: 500; }
+.person .muted { margin: 0 0 4px; font-size: 0.95rem; }
+
+.site-footer { border-top: 1px solid var(--line); font-size: 0.88rem; color: var(--muted); }
+.site-footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; padding-block: 20px; }
+
+@media (max-width: 600px) {
+  body { font-size: 16px; }
+  h1 { font-size: 1.8rem; }
+  .hero h1 { font-size: 2rem; }
+  .lead { font-size: 1.1rem; }
+}
+
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">Atmospheric Modeling @ Drexel</a>
+    <nav class="site-nav"><a href="index.html" class=active>Interests</a><a href="research.html">Research</a><a href="publications.html">Publications</a><a href="team.html">Team</a><a href="contact.html">Contact</a></nav>
+  </div>
+</header>
+<main class="wrap">
+<section class="hero"><h1>Atmospheric Modeling @ Drexel</h1><p class="lead">Mathematical representations of Earth&#x27;s atmosphere, built to inform environmental decisions.</p></section>
+<section class="prose"><h2>In brief</h2>
+<p>We pursue efficient means of improving air quality. The group develops and applies sensitivity analysis methods in chemical transport models, including the hyperdual-step and adjoint approaches in CMAQ and GEOS-Chem, so that the influence of emissions on pollutant concentrations, health, and climate can be resolved exactly rather than approximated. We care about informative data visualization, and we build tools that other researchers and agencies can use.</p>
+<h2>Numerically exact sensitivity analysis</h2>
+<p>Finite-difference and zero-out approaches to source attribution miss the nonlinear and cross terms that matter most in polluted, NOx-saturated air. We augmented CMAQ with hyperdual numbers to compute first- and second-order derivatives of concentrations with respect to emissions to machine precision, and extended the same idea to the global model as GEOS-Chem-hyd and to emissions handling through HEMCO-hyd. These models let us quantify, for example, how NOx and volatile chemical product emissions combine nonlinearly to form ozone and fine particles and how that translates into acute premature mortality.</p>
+<h2>Aerosol thermodynamics</h2>
+<p>The group&rsquo;s methods lineage runs through ISORROPIA, the inorganic aerosol thermodynamic equilibrium model. We developed ANISORROPIA, its adjoint, and ISORROPIA-MCX, a multicomplex-variable version that enables sensitivity analysis of aerosol composition, and we have carried the model indoors to simulate inorganic aerosols of outdoor origin in buildings and air handling units.</p>
+<h2>Satellites, data assimilation, and emissions</h2>
+<p>Satellite observations of trace gases constrain emissions when paired with a model that can be differentiated. Current work uses TEMPO nitrogen dioxide observations with hyperdual-enhanced data assimilation in GEOS-Chem to improve ozone estimates, and it uses CrIS-derived ammonia emissions to improve simulated nitrate and ammonium aerosol.</p>
+<h2>Air quality and community health</h2>
+<p>Alongside the modeling, we work with Philadelphia communities to reduce residents&rsquo; exposure to air pollution, including placing low-cost air cleaners and sensors in homes and connecting measurements with regulatory dispersion modeling through open-source tools such as pyAERMOD.</p></section>
+<section><h2>Recent</h2><ul class="news"><li><span class="tag">Paper</span> Berman, B. C.*, Cummings, B. E., Tian, X., DeCarlo, P. F., Capps, S. L. &amp; Waring, M. S. The development and evaluation of an air handling unit (AHU) module that simulates temperature and humidity dependent organic and inorganic gas-particle repartitioning. <em>Environmental Science: Processes &amp; Impacts</em> (2026). <a href="https://doi.org/10.1039/D6EM00267F">doi:10.1039/D6EM00267F</a></li><li><span class="tag">Talk</span> Samuel Akinjole — HEMCO-hyd: A user-friendly, hyperdual scaling of emissions for source-oriented sensitivity analysis — International GEOS-Chem Meeting 12 (IGC12), 2026-06</li><li><span class="tag">Funding</span> FINESST: Hyperdual-Enhanced Data Assimilation in GEOS-Chem for Improved Ozone Estimation Using TEMPO NO2 Observations (NASA)</li></ul></section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© 2026 Atmospheric Modeling Group, Drexel University</span>
+    <span class="muted">Updated 2026-09-11</span>
+  </div>
+</footer>
+</body>
+</html>
