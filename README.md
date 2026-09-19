@@ -49,4 +49,4 @@ docs/               generated output, served by GitHub Pages (do not edit by han
 
 1. Create a GitHub repository (for example `modelingair-site`) and push this folder to it.
 2. In the repository settings, under Pages, set the source to the `main` branch and the `/docs` folder.
-3. At the domain registrar, point modelingair.com at GitHub Pages (A records 185.199.108.153, 185.199.109.153, 185.199.110.153, 185.199.111.153, and a CNAME from www to `<username>.github.io`). `docs/CNAME` already carries the domain, so GitHub will pick it up and offer HTTPS.
+3. The site is served at `https://<username>.github.io/modelingair-site/`. The pages use relative links, so no path configuration is needed.

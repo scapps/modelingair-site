@@ -2,7 +2,7 @@
 
 site_title: Atmospheric Modeling @ Drexel
 tagline: Mathematical representations of Earth's atmosphere, built to inform environmental decisions.
-domain: modelingair.com            # written to docs/CNAME for GitHub Pages
+domain:                            # empty: served at <username>.github.io/modelingair-site
 scholar_url: https://scholar.google.com/citations?user=REPLACE_ME   # paste the profile URL from the old site
 show_roles: true                   # show PI / co-I on the Funding list
 
