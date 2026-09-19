@@ -482,7 +482,7 @@ def person_card(p):
 def render_team(data):
     body = ["<h1>Team</h1>"]
     pi = CONFIG.get("pi", {})
-    photo = f'<img class="photo" src="{esc(pi["photo"])}" alt="{esc(pi.get("name", ""))}">' if pi.get("photo") else ""
+    photo = f'<img class="photo" src="{esc(pi["photo"])}?v={dt.date.today().isoformat()}" alt="{esc(pi.get("name", ""))}">' if pi.get("photo") else ""
     body.append('<h2>Principal investigator</h2><div class="pi">' + photo + person_card({
         "name": pi.get("name", ""), "role": pi.get("title", ""), "bio": pi.get("bio", ""),
     }) + "</div>")
